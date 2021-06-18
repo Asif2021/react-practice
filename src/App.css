@@ -36,3 +36,47 @@
     transform: rotate(360deg);
   }
 }
+/* LogIn Page */
+
+.Login_outer{
+  width: 100%;
+  height: 100vh;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+.Login_outer h1{
+  color: white;
+  background: transparent;
+  text-shadow: 0 2px 2px black;
+}
+.Login_outer input{
+  width: 50%;
+  padding: 10px 20px;
+  border:solid;
+  outline: green;
+  margin: 20px 0;
+  text-align: center;
+}
+/* .Login_outer button{
+  line-height: 24px;
+  padding: 0 20px;
+  background: cyan;
+  color:black;
+  border: 2px solid #eeccff;
+  outline: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}  */
+.active_class{
+  color:brown;
+  border-bottom: 1px solid red;
+}
+.crud_tb, th, td{
+border: 1px solid black;
+border-collapse: collapse;
+margin-left: 35%;
+}

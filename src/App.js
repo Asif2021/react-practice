@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import store from './Redux/Store'
+import {Provider} from 'react-redux'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+import {BrowserRouter} from 'react-router-dom'
+import Navbar from './Components/Navbar'
+import Routs from './Components/Routs'
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return (  
+    <div className="App"> 
+    <BrowserRouter>
+    <Provider store = {store}>
+    <div className='mt-5'>
+    <Navbar/>
+    <Routs/>
+      
     </div>
-  );
+    </Provider>
+    </BrowserRouter>
+     </div>
+      );
 }
 
 export default App;
